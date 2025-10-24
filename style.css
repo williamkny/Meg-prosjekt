@@ -33,8 +33,9 @@
         display: block;
         aspect-ratio: 1/1;
       }
+      /* NAV START */
       nav{
-        background-color: rgb(135, 226, 205);
+        background-color: rgb(139, 140, 193);
         height: 150px;
         border: 2px solid black;
       }
@@ -58,29 +59,34 @@
         transition: 250ms;
         transform: scale(1.3);
     }
+    /* NAV END */
+    /* HJEMMESIDE START */
 
     main{
         background-color: rgb(56, 114, 164);
     }
     .grid-section{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(188, 231, 237);
         padding: 50px;
     }
     .info-grid{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 20px;
-      background-color: rgb(165, 199, 212);
+      background-color: rgb(161, 206, 224);
       padding: 20px;
       border-radius: 5%;        
     }
     .info-card{
       display: flex;
-        background-color: rgb(103, 136, 173);
+        background-color: rgb(139, 140, 193);
         border-radius: 10%;
         text-align: center;
         align-items: center;
         
+    }
+    .grid-section h3{
+      padding: 20px;
     }
    
      h4{
@@ -99,6 +105,8 @@
       height: 500px;
       
     }
+    /* HJEMMESIDE END */
+    /* FOOTER START */
     footer{
       background-color: rgb(139, 140, 193);
       text-align:center ;
@@ -130,8 +138,79 @@
       text-decoration: none;
       color: black;
     }
-    .info2 a:hover{
+    .info2 li:hover{
       transition: 250ms;
-      transform: scale(1.5);
+      transform: scale(1.3);
+     }
+     /* FOOTER END */
 
-    }
+     /* TIMEPLAN START */
+
+        td, th{
+        border: 1px solid black;
+        padding: 20;
+        text-align: center;
+        width: 15%;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            height: 1200px;
+            border: solid black 2px;
+        }
+        .timeplan-section{
+          max-width: 1500px;
+          margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            background-color:whitesmoke;
+        }
+        .matte{
+            background-color: lightgreen;
+        }
+        .rettslære{
+            background: burlywood;
+        }
+        .økonomi{
+            background: cornflowerblue;
+        }
+        .it{
+            background: darkgreen
+        }
+        .norsk{
+            background: rgb(199, 70, 70);
+        }
+        .gym{
+            background: lightblue;
+        }
+        .spansk{
+            background-color: palevioletred;
+        }
+        .historie{
+            background-color: bisque;
+        }
+        .storefri{
+            background-color: azure;
+        }
+        .klasse{
+          background-color: lightgoldenrodyellow;
+        }
+        .friminutt{
+          height: 50px;
+        }
+        .timeplan-section h3{
+          text-align: center;
+          padding: 20px;
+        }
+        .timeplan-section a{
+          text-decoration: none;
+          color: black;
+        }
+        .timeplan-section h3:hover{
+          transition: 250ms;
+          transform: scale(1.3);
+
+        }
