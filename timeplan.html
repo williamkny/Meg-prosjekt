@@ -14,6 +14,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
+  <!-- HEADER -->
   <body>
     <header>
       <nav>
@@ -22,81 +24,150 @@
             <a href="index.html"><i class="fa-solid fa-house"></i>Hjem</a>
           </li>
           <li>
-            <a href="timeplan.html"
-              ><i class="fa-solid fa-calendar-days"></i>Timeplan</a
-            >
+            <a href="timeplan.html"><i class="fa-solid fa-calendar-days"></i>Skole</a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-futbol"></i>Interesser</a>
+            <a href="interesser.html"><i class="fa-solid fa-futbol"></i>Interesser</a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-image"></i>Galleri</a>
+            <a href="galleri.html"><i class="fa-solid fa-image"></i>Galleri</a>
           </li>
         </ul>
       </nav>
     </header>
-
+<!-- TIMEPLAN -->
+ <main>
+ <h1>Williams Fabelaktige Timeplan</h1>
     <div class="timeplan-section">
-      <h1>Williams Fabelaktige Partallsuke Timeplan</h1>
-      <a href="#"><h3>Se oddetalsuker</h3></a>
       <div class="timeplan">
         <table>
           <thead>
             <tr>
               <th>Tid</th>
-              <th>Mandag</th>
-              <th>Tirsdag</th>
-              <th>Onsdag</th>
-              <th>Torsdag</th>
-              <th>Fredag</th>
+              <th colspan="2">Mandag</th>
+              <th colspan="2">Tirsdag</th>
+              <th colspan="2">Onsdag</th>
+              <th colspan="2">Torsdag</th>
+              <th colspan="2">Fredag</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>08:15-09:00</td>
-              <td class="rettslære">Rettslære</td>
-              <td></td>
-              <td class="spansk">Spansk</td>
-              <td class="rettslære">Rettslære</td>
-              <td class="matte">Matte R1</td>
+            <tr class="uke">
+              <td>Uketype</td>
+              <td>Partall</td>
+              <td>Oddetall</td>
+              <td>Partall</td>
+              <td>Oddetall</td>
+              <td>Partall</td>
+              <td>Oddetall</td>
+              <td>Partall</td>
+              <td>Oddetall</td>
+              <td>Partall</td>
+              <td>Oddetall</td>
             </tr>
             <tr>
-              <td>09:00-09:05</td>
-              <td colspan="5" class="friminutt">Friminutt</td>
+              <td>08:15-09:00</td>
+              <td id="rettslære">Rettslære</td>
+              <td id="it">IT</td>
+              <td colspan="2"></td>
+              <td id="spansk" colspan="2">Spansk</td>
+              <td id="rettslære" colspan="2">Rettslære</td>
+              <td id="matte" colspan="2">Matte R1</td>
+            </tr>
+            <tr>
+              <td class="friminutt">09:00-09:05</td>
+              <td colspan="10" class="friminutt">Friminutt</td>
             </tr>
             <tr>
               <td>10:00-11:35</td>
-              <td class="matte">Matte R1</td>
-              <td class="økonomi">Samfunnsøkonomi</td>
-              <td class="norsk">Norsk</td>
-              <td class="historie">Historie</td>
-              <td class="it">IT</td>
+              <td id="matte" colspan="2">Matte R1</td>
+              <td id="økonomi" colspan="2">Samfunnsøkonomi</td>
+              <td id="norsk" colspan="2">Norsk</td>
+              <td id="historie" colspan="2">Historie</td>
+              <td id="it" colspan="2">IT</td>
             </tr>
             <tr>
-              <td>11:35-12:20</td>
-              <td colspan="5" class="friminutt">Storefri</td>
+              <td class="storefri">11:35-12:20</td>
+              <td colspan="10" class="storefri">Storefri</td>
             </tr>
             <tr>
-              <td>12:20-13.55</td>
-              <td class="norsk">Norsk</td>
-              <td class="gym">Kroppsøving</td>
-              <td class="it">IT</td>
-              <td class="økonomi">Samfunnsøkonomi</td>
-              <td class="spansk">Spansk</td>
+              <td class="friminutt">12:20-13.55</td>
+              <td id="norsk" colspan="2">Norsk</td>
+              <td id="gym" colspan="2">Kroppsøving</td>
+              <td id="it" colspan="2">IT</td>
+              <td id="økonomi" colspan="2">Samfunnsøkonomi</td>
+              <td id="spansk" colspan="2">Spansk</td>
             </tr>
             <tr>
-                <td>13:55-14:00</td>
-                <td class="friminutt" colspan="5">Friminutt</td>
+              <td class="friminutt">13:55-14:00</td>
+              <td class="friminutt" colspan="10">Friminutt</td>
             </tr>
             <tr>
               <td>14:00-15:35</td>
-              <td class="klasse">Klassens time</td>
-              <td class="rettslære">Rettslære</td>
-              <td colspan="3"></td>
+              <td id="klasse">Klassens time</td>
+              <td id="rettslære">Rettslære</td>
+              <td colspan="5"></td>
+              <td id="matte">Matte R1</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+  </main>
+
+<!-- FAG -->
+    <div class="fag-section">
+        <h1>Hva handler fagene om?</h1>
+    <div class="fag-grid">
+            <div class="fag-card" id="rettslære">
+                <h4>Rettslære! Her lærer jeg å manøvrere juridiske dilemmaer rundt forbrukerkjøp, avtaler og mer.</h4>
+            </div>
+               <div class="fag-card" id="norsk">
+                <h4>Norsk! I dette faget har jeg om alt fra moderne retorikk til norrøne dikt og kvad.</h4>
+            </div>
+               <div class="fag-card" id="matte">
+                <h4>R1!, det er villt hvor mye man ikke vet i matten, lærer omtrent noe nytt hver time! Akkurat nå er det derivasjon.</h4>
+            </div>
+            <div class="fag-card" id="it">
+                <h4>IT! Objektivt det beste faget man kan velge, bare se på siden min! Helt fabelaktig. Er du interresert i koding så er dette for deg.</h4>
+            </div>
+           <div class="fag-card" id="gym">
+                <h4 class="gym">Gym, jeg har et love-hate relationship med denne. Digger fotball, skeptisk til turn. Et variert og fysisk fag.</h4>
+            </div>
+            <div class="fag-card" id="økonomi">
+                <h4>Samfunnsøkonomi er kanskje faget som har gitt meg mest forståelse av hvordan samfunnet fungerer. Her lærer jeg om alt fra kronekursen til finanspolitiske beslutninger</h4>
+            </div>
+             <div class="fag-card" id="spansk">
+                <h4>Hola amigo, i spansk lærer du ikke bare språket, men også spansk historie og kultur, f.eks om Colombus eller Dia de Los Muertos!</h4>
+            </div>
+             <div class="fag-card" id="klasse">
+                <h4>Klassens time er som kosttilskudd. Det inneholder alt du ikke har tid til ellers. F.eks elevundersøkelser og elevråd.</h4>
+            </div>
+             <div class="fag-card" id="historie">
+                <h4>Historie-timer er sjeldne men underholdene, akkuratt som frie menn i Romeriket. Her kan du lære om kriger, filosofi og sivilisasjoner!</h4>
+            </div>
+          </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+          <div class="footer-grid">
+            <div class="info1">
+              <ul>
+                <li>Lagd av William</li>
+                <li>Bilder av William</li>
+              </ul>
+            </div>
+            <div class="info2">
+              <h3>Kontakt</h3>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-discord"></i>Discord</a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+              </ul>
+            </div>
+          </div>            
+    </footer>
+
+   
   </body>
 </html>
